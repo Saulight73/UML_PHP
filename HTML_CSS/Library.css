@@ -161,6 +161,24 @@ footer{
 
 .SeparateBar{
     width: 90%;
-    margin-top: 100px;
+    margin-top: 20px;
+	margin-bottom: 20px;
     border: 2px solid rgb(0, 0, 0);
 }
+
+.flexbooks{
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	justify-content: center;
+	border-color: black;
+	border-width: 3px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.flexbooks > label{
+	border: black,4px;
+	line-height: 25px;
+}
+
