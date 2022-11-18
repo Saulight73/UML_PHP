@@ -41,13 +41,49 @@ class bookModel{
 
 
 
+class formatModel{
+    public String $format;
+ 
+public function __construct(int $index){
+    $oui=['Paperback','Hardcover','Audiobook','Audio CD','MP3 CD','PDF'];
+    $this->format = $oui[$index];
 
+}
 
+}
 
 
 class bookItemModel{
-    public bookModel $book;
+    public int $barcode;
+    public String $tag;
+    public int $ISBN;
+    public String $subject;
+    public String $title;
+    public bool $isReferenceOnly = false;
+    public langModel $lang;
+    public int $numberOfPages;
+    public formatModel $format;
+    public String $borrowed;
+    public int $loanPeriod;
+    public String $dueDate;
+    public bool $isOverdue = false;
 
+    public function __construct(int $barcode, String $tag, int $ISBN, String $subject, String $title, bool $isReferenceOnly, 
+        langModel $lang, int $numberOfPages, formatModel $format, String $borrowed, int $loanPeriod, String $dueDate, bool $isOverdue = false){
+            $this->barcode = $barcode;
+            $this->tag = $tag;
+            $this->ISBN = $ISBN;
+            $this->subject = $subject;
+            $this->title = $title;
+            $this->isReferenceOnly = $isReferenceOnly;
+            $this->lang = $lang;
+            $this->numberOfPages = $numberOfPages;
+            $this->format = $format;
+            $this->borrowed = $borrowed;
+            $this->loanPeriod = $loanPeriod;
+            $this->dueDate = $dueDate;
+            $this->isOverdue = $isOverdue;
+        }
 }
 
 
@@ -154,7 +190,7 @@ class patronModel{
 	public fullNameModel $name;
 	public addressModel $address;
 
-	public function __construct(fullNameModel $name, addressModel $address){
+	public function __construct($name, $address){
 		$this->name = $name;
 		$this->address = $address;
 	}
