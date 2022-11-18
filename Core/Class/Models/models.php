@@ -32,3 +32,8 @@ class bookModel{
 
     }
 }
+
+class bookItemModel{
+    public bookModel $book;
+    
+}
