@@ -50,7 +50,11 @@
 
                         </form>
                     </div>
-
+                    <?php
+                    if(isset($_GET['username'])){
+                        echo $_GET['username'];
+                    }
+                    ?>
                     <br><br>
                     <div class="container">
                         <label>Add : </label>

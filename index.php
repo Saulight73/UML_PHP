@@ -9,6 +9,8 @@ if($type =="login"){
     $oui = $myclass->loginRequest($_POST['login'],$_POST['password']);
     echo"<br><br>";
     echo($oui);
+    header('Location:./HTML_CSS/HomePage.php?username='.$oui);
+
     
 }
 
