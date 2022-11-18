@@ -3,7 +3,6 @@
 class langModel{
     public String $lang;
  
-
 public function __construct(int $index){
     $oui=['English','French','German','Spanish','Italian'];
     $this->lang = $oui[$index];
@@ -11,6 +10,13 @@ public function __construct(int $index){
 }
 
 }
+
+
+
+
+
+
+
 
 class bookModel{
     public int $ISBN;
@@ -33,7 +39,13 @@ class bookModel{
     }
 }
 
+
+
+
+
+
+
 class bookItemModel{
     public bookModel $book;
-    
+
 }
