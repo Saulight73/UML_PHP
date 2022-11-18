@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+
+    <head>
+        <link rel="stylesheet" href="CSSFanpage.css">
+        <meta charset="utf-8" />
+        <title>Forgor Library</title>
+    </head>
+
+
+    <body>
+        <div class="body">
+
+
+        <header class="header">
+            <div class="NavBarSettings">
+                <div class="NavMenuTitle">
+                        <h1>
+                            <a href="HomePage.html" id="NavBar"><u>FORGOR LIBRARY</u></a>
+                            <a href="Livres.html" class="CurrentRightNavBar">Nos livres</a>
+                            <a href="Historique.html" class="RightNavBar">Historique</a>
+                            <a href="Administration.html" class="RightNavBar">Administration</a>
+                            <a href="Personnel.html" class="RightNavBar">Besoin d'aide?</a>
+                        </h1>
+                </div>
+            </div>
+        </header>
+
+
+
+        <main>
+            <section>
+                <article>
+                    <h2>Accueil</h2>
+                    <p>Welcome to the Forgor Library</p>>    
+                </article>
+
+                <aside>
+                    Login :
+                    <div class="container">
+                        <label>Utilisateur : </label>
+                        <input type="text" placeholder="Entrez un nom d'utilisateur ICI" name="username" required>
+                        <label>Mot de passe : </label>
+                        <input type="password" placeholder="Entrez votre mot de passe ICI" name="password" required>
+                        <button type="submit">Login</button> <br>
+                        <a href="#">You forgor your password?</a>
+                    </div>
+
+                    <br><br>
+                    
+                    <div class="container">
+                        <label>Recherche : </label>
+                        <input type="text" placeholder="Recherchez vos livres ici (Nom de livre seulement pour le moment" name="book">
+                        <button type="submit">SEARCH THIS!</button><br>
+                        <a href="a">Can't find your book? Ask a librarian.</a>
+                    </div>
+
+                    <br><br>
+                    <div class="container">
+                        <label>Add : </label>
+                        <input type="text" placeholder="Nom du livre" name="BookName">
+                        <br>
+                        <label>Update : </label>
+                        <input type="text" placeholder="Nouveau nom" name="NewBookName">
+                        <button type="submit">DELETE THIS</button>
+                    </div>
+                    <label>Status du compte : </label>
+                    <select name="Status" id="Status">
+                        <option value = "Actif">Actif</option>
+                        <option value = "Frozen">Frozen</option>
+                        <option value = "Inactive">Inactive</option>
+                    </select>
+                </aside>
+
+            </section>
+        </main>
+
+    </body>
+</html>

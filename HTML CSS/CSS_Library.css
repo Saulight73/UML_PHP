@@ -1,0 +1,12 @@
+
+.container{
+    padding : 25px;
+    background-color: grey;
+}
+
+.accounts{
+    background-color: grey;
+    flex-direction: column;
+    flex-wrap: wrap;
+    border: 4px black;
+}
