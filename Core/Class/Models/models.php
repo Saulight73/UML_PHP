@@ -154,7 +154,7 @@ class patronModel{
 	public fullNameModel $name;
 	public addressModel $address;
 
-	public function __construct($name, $address){
+	public function __construct(fullNameModel $name, addressModel $address){
 		$this->name = $name;
 		$this->address = $address;
 	}

@@ -1,10 +1,10 @@
 parametre HTTP 
-?type=search&nom=bob
-?type=login&user=bob&password=azerty
-?type=manage&bookId=0&manageType=Del/Add/Edit
-?type=viewItem&itemId=1&requestRights
-?type=requestRights&user=admin&password=1234
-?type=accountAccess&userId=1&status=frozen
+?type=search&nom=bob&redirectUri=bob.php
+?type=login&user=bob&password=azerty&redirectUri=bob.php
+?type=manage&bookId=0&manageType=Del/Add/Edit&redirectUri=bob.php
+?type=viewItem&itemId=1&redirectUri=bob.php
+?type=requestRights&user=admin&password=1234&redirectUri=bob.php
+?type=accountAccess&userId=1&status=frozen&redirectUri=bob.php
 
 
 
