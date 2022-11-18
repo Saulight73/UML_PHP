@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+
+    <head>
+        <link rel="stylesheet" href="Library.css">
+        <meta charset="utf-8" />
+        <title>Forgor Library</title>
+    </head>
+
+
+    <body>
+        <div class="body">
+
+
+        <header class="header">
+            <div class="NavBarSettings">
+                <div class="NavMenuTitle">
+                        <h1>
+                            <a href="HomePage.html" id="NavBar"><u>FORGOR LIBRARY</u></a>
+                            <a href="Livres.html" class="CurrentRightNavBar">Nos livres</a>
+                            <a href="Historique.html" class="RightNavBar">Historique</a>
+                            <a href="Administration.html" class="RightNavBar">Administration</a>
+                            <a href="Personnel.html" class="RightNavBar">Besoin d'aide?</a>
+                        </h1>
+                </div>
+            </div>
+        </header>
+
+
+
+        <main>
+            <section>
+                <article>
+                    <h2>Accueil</h2>
+                    <p>Welcome to the Forgor Library</p>>    
+                </article>
+
+                <aside>
+                    Login :
+                    <div class="container">
+                        <form action="../Core/Class/core.php?type=login&user=bob&password=bob">
+                        <label>Utilisateur : </label>
+                        <input type="text" placeholder="Entrez un nom d'utilisateur ICI" name="username" required>
+                        <label>Mot de passe : </label>
+                        <input type="password" placeholder="Entrez votre mot de passe ICI" name="password" required>
+                         <br>
+                        <a href="../Core/Class/core.php"><button type="submit">Login</button></a>
+                        </form>
+                    </div>
+
+                    <br><br>
+                    <div class="container">
+                        <label>Add : </label>
+                        <input type="text" placeholder="Nom du livre" name="BookName">
+                        <br>
+                        <label>Update : </label>
+                        <input type="text" placeholder="Nouveau nom" name="NewBookName">
+                        <button type="submit">DELETE THIS</button>
+                    </div>
+
+                    </select>
+                </aside>
+
+            </section>
+        </main>
+
+    </body>
+</html>
