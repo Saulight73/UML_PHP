@@ -8,7 +8,7 @@ Tâches :
   
   
 Technologies utilisée :
-  _XAMP
+	_XAMP
   _MySQL
   _PHP
   _HTML CSS
